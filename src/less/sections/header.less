@@ -1,0 +1,35 @@
+.header {
+	padding: 20px 0;
+
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__user {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__lang {
+		display: flex;
+		margin-right: 50px;
+
+		.xs(margin-right, 10px);
+
+		a {
+			display: inline-block;
+			text-decoration: none;
+			font-size: 16px;
+			color: inherit;
+			padding: 5px;
+		}
+
+		.active a {
+			font-weight: 700;
+			color: @accent;
+		}
+	}
+}

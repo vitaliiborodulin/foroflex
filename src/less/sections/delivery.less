@@ -1,0 +1,61 @@
+.delivery {
+	padding-top: 150px;
+	padding-bottom: 180px;
+	background: url(../img/delivery-bg-1.png) no-repeat 230px 200px, linear-gradient(180deg, #FFFFFF 90%, #F1E5E0 100%);
+
+	.xl-block({
+		background: url(../img/delivery-bg-1.png) no-repeat center 190px, linear-gradient(180deg, #FFFFFF 90%, #F1E5E0 100%);
+	});
+
+
+
+	.md-block({
+		padding-top: 50px;
+		padding-bottom: 70px;
+		text-align: center;
+		background: url(../img/delivery-bg-1.png) no-repeat center 114px, linear-gradient(180deg, #FFFFFF 90%, #F1E5E0 100%);
+	});
+
+	.xs-block({
+		background: url(../img/delivery-bg-1.png) no-repeat center 20%/contain, linear-gradient(180deg, #FFFFFF 90%, #F1E5E0 100%);
+	});
+
+	.h2 {
+		margin-bottom: 15px;
+	}
+
+	.subtitle {
+		margin-bottom: 126px;
+		.md(margin-bottom, 180px);
+	}
+
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.sm-block({
+			flex-direction: column
+		});
+	}
+
+	.box {
+		margin-top: 200px;
+		.sm(margin-top, 20px);
+	}
+
+	&__img {
+		height: 465px;
+		.md(height, 300px);
+
+		.sm-block({
+			order: -1;
+		});
+
+		img {
+			width: 100%;
+			height: 100%;
+			object-fit: contain;
+		}
+	}
+}
